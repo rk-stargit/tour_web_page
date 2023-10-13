@@ -1,13 +1,125 @@
-body {
+/* write your css here */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.App {
+  background-color: rosybrown;
+}
+body {
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  font-size: 3rem;
+  margin: 6vh;
+  /* border:  7px dashed rosybrown; */
+  border-radius: 20px;
+  padding: 1vh 5vw;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 400px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: aliceblue;
+}
+.image {
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.tour-info {
+  margin: 20px 5px;
+}
+.tour-price {
+  font-size: 1.3rem;
+  color: rgb(117, 7, 7);
+}
+
+.tour-name {
+  font-size: 1.5rem;
+}
+
+.read-more {
+  color: #12b0e8;
+  cursor: pointer;
+}
+
+.btn-color {
+    width: 150px;
+  margin-top: 18px;
+  padding: 10px 10px;
+  border: 1px solid rgb(117, 7, 7);
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgb(132, 204, 206);
+  color: black;
+  cursor: pointer;
+}
+.btn-color:hover {
+  background-color: rosybrown;
+  color: aliceblue;
+}
+.bg {
+  background-color: rosybrown;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.refresh {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-refresh {
+  margin-top: 18px;
+  padding: 10px 40px;
+  border: 1px solid rgb(117, 7, 7);
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgb(132, 204, 206);
+  color: black;
+  cursor: pointer;
+}
+.btn-refresh:hover {
+  background-color: rosybrown;
+  color: aliceblue;
+}
+.btn-style{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
